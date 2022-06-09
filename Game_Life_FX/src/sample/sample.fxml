@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.821608040201005" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="530.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="324.0" prefWidth="515.0">
+      <GridPane fx:id="grid_game_box" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      </GridPane>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+      <SplitPane dividerPositions="0.6945540647198105" prefHeight="74.0" prefWidth="472.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane prefHeight="90.0" prefWidth="315.0">
+               <children>
+                    <Button fx:id="btn_new_generation" layoutX="16.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click_new_generation" prefHeight="34.0" prefWidth="184.0" text="New generation" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="14.0">
+                        <font>
+                          <Font name="Felix Titling" size="12.0" />
+                        </font>
+                    </Button>
+                  <Button fx:id="btn_start_life" layoutX="94.0" layoutY="53.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click_start_life" prefHeight="26.0" prefWidth="60.0" text="Start" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="204.0">
+                     <font>
+                        <Font name="Felix Titling" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_stop_life" layoutX="175.0" layoutY="54.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click_stop_life" prefHeight="26.0" prefWidth="60.0" text="Stop" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="142.0">
+                     <font>
+                        <Font name="Felix Titling" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="textf_count_iteration" layoutX="24.0" layoutY="46.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="41.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" />
+                  <ColorPicker fx:id="color_life" layoutX="247.0" layoutY="17.0" onAction="#choose_new_color_life" prefHeight="26.0" prefWidth="50.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="14.0">
+                     <value>
+                        <Color red="0.7372549176216125" green="0.5607843399047852" blue="0.5607843399047852" />
+                     </value></ColorPicker>
+                  <ColorPicker fx:id="color_nolife" layoutX="247.0" layoutY="53.0" onAction="#choose_new_color_nolife" prefHeight="26.0" prefWidth="50.0" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="12.0">
+                     <value>
+                        <Color red="0.6784313917160034" green="0.8470588326454163" blue="0.9019607901573181" />
+                     </value></ColorPicker>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="171.0">
+               <children>
+                    <TextField fx:id="textf_count_str" layoutX="34.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="14.0" />
+                    <TextField fx:id="textf_count_column" layoutX="106.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="50.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="14.0" />
+                    <Button fx:id="btn_new_box" layoutX="20.0" layoutY="44.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click_new_box" prefHeight="34.0" prefWidth="110.0" text="New box" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="22.0">
+                        <font>
+                          <Font name="Felix Titling" size="12.0" />
+                        </font>
+                    </Button>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+    </AnchorPane>
+</SplitPane>
